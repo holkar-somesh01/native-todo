@@ -18,6 +18,6 @@ app.use((err, req, res, next) => {
 })
 
 mongoose.connection.once("open", () => {
-    console.log("SERVER RUNNING")
+    console.log("SERVER RUNNING    ")
     app.listen(process.env.PORT, console.log("MONGO CONNECTED"))
 })
